@@ -14,14 +14,14 @@
   background: #fff;
 }
 
-.navbar {
+header {
   display: flex;
   padding: 14px 24px 14px;
   align-items: center;
   justify-content: space-between;
 }
 
-.navbar h1 a {
+header a {
   text-decoration: none;
   font-weight: 700;
   font-size: 18px;
@@ -48,15 +48,16 @@
 }
 
 .content p {
-  padding: 12px 24px 0;
+  padding: 12px 24px 12px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #344563;
 }
 
-.content h6 {
-  padding: 12px 24px 0;
+.content h6 a {
+  text-decoration: none;
+  padding: 0 24px 12px;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -64,8 +65,12 @@
 }
 
 .social-media-icons {
-  padding: 12px 24px 0;
+  padding: 6px 12px 0;
   display: flex;
   align-items: center;
   column-gap: 20px;
+}
+
+.social-media-icons li {
+  list-style: none;
 }
