@@ -1,15 +1,14 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio-setup-and-mobile-version-skeleton
+# Portfolio: Mobile Version
 
 > For the second milestone in building my portfolio website, I will create the mobile website section where I will list my portfolio projects.
 
 
 ## Built With
 
-- HTML
-- CSS
-- FIGMA
+- Languages used HTML, CSS, FIGMA.
+- Technologies used Github, Git, VSCode.
 
 ## Webpage user Interface Screenshot
 
