@@ -84,7 +84,7 @@ button:hover {
 .Works_Section {
   display: grid;
   grid-template-columns: 80%;
-  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-rows: 24% 24% 24% 24%;
 }
 
 .card {
