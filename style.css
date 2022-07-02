@@ -8,6 +8,14 @@
   /* background: #E5E5E5; */
 }
 
+main {
+  width: 375px;
+  background: #e5e5e5;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto;
+}
+
 .container {
   width: 375px;
   height: 674px;
@@ -37,7 +45,7 @@ header a {
 .content {
   width: 375px;
   height: 626px;
-  background-image: url(/images/header-shapes\ mobile.png);
+  background-image: url(./images/header-shapes\ mobile.png);
 }
 
 .content h1 {
@@ -70,11 +78,6 @@ header a {
   display: flex;
   align-items: center;
   column-gap: 20px;
-}
-
-main {
-  width: 375px;
-  background: #e5e5e5;
 }
 
 button:hover {
