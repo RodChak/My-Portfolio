@@ -82,7 +82,7 @@ header a {
 
 button:hover {
   cursor: pointer;
-  background: #9296b6;
+  background: red;
 }
 
 button:active {
@@ -224,7 +224,7 @@ button:disabled {
   border-radius: 8px;
   background: #ebebff;
   border: none;
-  padding: 4px 12px 4px 12px;
+  padding: 8px 15px 8px 15px;
 }
 
 .see_project_button button {
