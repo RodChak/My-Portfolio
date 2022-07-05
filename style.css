@@ -414,6 +414,7 @@ button:disabled {
 }
 
 .home_indicator {
+  display: flex;
   justify-content: center;
   margin-top: 15px;
 }
