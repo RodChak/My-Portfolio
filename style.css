@@ -11,7 +11,7 @@ main {
   background: #e5e5e5;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: auto auto auto auto ;
+  grid-template-rows: auto auto auto auto;
 }
 
 .container {
@@ -80,16 +80,16 @@ header a {
 
 button:hover {
   cursor: pointer;
-  background: #6070FF;
+  background: #6070ff;
 }
 
 button:active {
-  background: #2230D2;
+  background: #2230d2;
   transform: translateY(4px);
 }
 
 button:disabled {
-  background: #E5E5E5;
+  background: #e5e5e5;
 }
 
 .Works_Section {
@@ -181,7 +181,7 @@ button:disabled {
   display: flex;
   margin: 12px 16px 12px 16px;
   column-gap: 12px;
-} 
+}
 
 /* Pair programming assignment
  .tags ul li button {
@@ -323,6 +323,20 @@ button:disabled {
   height: 20px;
 }
 
+.background button {
+  background: #fff;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-left: 24px;
+  margin-top: 10px;
+  border: none;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+}
+
 .categories button:hover {
   cursor: pointer;
   background: none;
@@ -339,14 +353,13 @@ button:disabled {
 
 .contact_form {
   margin-top: 150px;
-
 }
 
 .background {
   margin-top: 500px;
   width: 375px;
   height: 779px;
-  background: #6070FF; 
+  background: #6070ff;
   background-position: 153px;
   background-image: url(./images/contactform.svg);
   border-top-left-radius: 60px;
@@ -355,11 +368,11 @@ button:disabled {
 
 .background h2 {
   text-align: center;
-  padding-top:103px;
+  padding-top: 103px;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  color: #FFFFFF;
+  color: #fff;
   margin-bottom: 12px;
 }
 
@@ -367,14 +380,14 @@ button:disabled {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  color: #EBEBFF;
+  color: #ebebff;
   text-align: center;
-  margin: 0px 24px 24px 24px;
+  margin: 0 24px 24px 24px;
 }
 
 .all {
-  background: #FFFFFF;
-  border: 1px solid #CFD8DC;
+  background: #fff;
+  border: 1px solid #cfd8dc;
   border-radius: 8px;
   padding: 15px 16px 15px 16px;
   font-weight: 400;
@@ -385,32 +398,18 @@ button:disabled {
 }
 
 .field3 {
-  background: #FFFFFF;
-  border: 1px solid #CFD8DC;
+  background: #fff;
+  border: 1px solid #cfd8dc;
   border-radius: 8px;
   padding: 15px 16px 15px 16px;
   font-weight: 400;
   font-size: 17px;
   line-height: 20px;
   margin: 10px 24px 5px 24px;
-  width: 292px; 
+  width: 292px;
   height: 170px;
   word-wrap: break-word;
   word-break: break-all;
-}
-
-.background button{
-  background: #FFFFFF;
-  border-radius: 8px;
-  padding: 12px 16px;
-  margin-left: 24px;
-  margin-top: 10px;
-  border: none;
-  letter-spacing: 0.03em;
-  color: #6070FF;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
 }
 
 .home_indicator {
@@ -418,7 +417,3 @@ button:disabled {
   justify-content: center;
   margin-top: 15px;
 }
-
-
-
-
