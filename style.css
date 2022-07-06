@@ -335,6 +335,7 @@ button:disabled {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
+  width: 145px;
 }
 
 .categories button:hover {
@@ -356,6 +357,8 @@ button:disabled {
 }
 
 .background {
+  display: flex;
+  flex-direction: column;
   margin-top: 500px;
   width: 375px;
   height: 779px;
@@ -385,7 +388,7 @@ button:disabled {
   margin: 0 24px 24px 24px;
 }
 
-.all {
+.field {
   background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
@@ -408,8 +411,6 @@ button:disabled {
   margin: 10px 24px 5px 24px;
   width: 292px;
   height: 170px;
-  word-wrap: break-word;
-  word-break: break-all;
 }
 
 .home_indicator {
