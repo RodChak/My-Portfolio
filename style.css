@@ -183,14 +183,6 @@ button:disabled {
   column-gap: 12px;
 }
 
-/* Pair programming assignment
- .tags ul li button {
-  float: left;
-  margin-left: 15px;
-  margin-bottom: 15px;
-  margin-top: 10px;
-} */
-
 .social-media-icons li {
   display: flex;
   padding-left: 12px;
