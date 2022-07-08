@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+
+  button:hover {
+    cursor: pointer;
+    background: #6070ff;
+  }
+
+  button:active {
+    background: #2230d2;
+    transform: translateY(4px);
+  }
+
+  button:disabled {
+    background: #e5e5e5;
+  }
+
+  main {
+    width: 100vw;
+    background: #e5e5e5;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+  }
+
+  .intro_page {
+    height: 100vh;
+    background: #fff;
+  }
+
+  header {
+    display: flex;
+    height: 7.860vh;
+  }
+
+  .navbar {
+      padding: 2.729vh 10.763vw 2.729vh 10.763vw;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  header a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.965vh;
+    line-height: 2.183vh;
+    color: #6070FF;
+  }
+
+  .menu_bar{
+    display: flex;
+    float: right;
+    column-gap: 2.222vw;
+  }
+
+  .menu_bar li {
+    list-style: none;
+    font-weight: 500;
+    font-size: 1.637vh;
+    line-height: 2.183vh;
+    color: #344563
+  }
+
+  .background_content {
+    padding-top: 12.88vh;
+    background-image: url(./images/Header.svg);
+    height: 78.762vh;
+    width: 97.04vw;
+    padding-left: 2.402vw;
+    padding-right: 0.555vw;
+    
+  }
+
+  .content {
+    padding-top: 12.882vh;
+    padding-left: 18.055vw;
+    padding-right: 18.055vw;
+  }
+
+  .content h1 {
+    font-weight: 700;
+    font-size: 5.240vh;
+    line-height: 6.550vh;
+    letter-spacing: 0.0256vw;
+    color: #091E42;
+  }
+
+  .content p {
+    margin-top: 1.310vh;
+    margin-bottom: 1.310vh;;
+    font-weight: 400;
+    font-size: 2.183vh;
+    line-height: 3.056vh;
+    color: #344563;
+  }
+
+  .content h6 a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.746vh;
+    line-height: 2.620vh;
+    color: #7F8CFF;
+  }
+
+  .social-media-icons {
+    margin-top: 1.528vh;
+    display: flex;
+    column-gap: 1.388vw;
+    align-items: center;
+  }
+
+  .social-media-icons li{
+    list-style: none;
+  }
+
+  .Works_Section {
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: 24% 24% 24% 24%;
+  }
+
+  
+
+
+
+
+
+
+
+}
+
