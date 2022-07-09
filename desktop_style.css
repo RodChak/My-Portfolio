@@ -58,6 +58,23 @@
     color: #6070ff;
   }
 
+  @keyframes my_logo {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+
   .menu_bar {
     display: flex;
     column-gap: 2.222vw;
@@ -141,7 +158,7 @@
     background: #fff;
     border: 1px solid #dfe1e6;
     border-radius: 24px;
-    padding-top: 114px;
+    /* padding-top: 114px; */
     padding-left: 1.5vw;
     padding-right: 1.5vw;
   }
@@ -379,7 +396,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 500px;
+    margin-top: 134px;
     height: 779px;
     background: #6070ff;
     background-position: 153px;
