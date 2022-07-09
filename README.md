@@ -1,10 +1,11 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio: Mobile Version
+# Portfolio: Mobile and Destop Version
 
 >For the first milestone in the process of creating my portfolio website, I will set up a new repository and prepare it for development using best practices (e.g. linters). I will also build the first 2 sections of the mobile website using the template I chose in [FIGMA](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=39%3A122).
 > For the second milestone in building my portfolio website, I will create the mobile website section where I will list my portfolio projects.
 > For the third milestone of my portfolio website, I will add a contact form to my portfolio. I will also make sure that I guide my users' experience in a way that helps them fill in the form without frustration.
+> For the fourth milestone in my portfolio website, I will use media queries to make sure that your website displays correctly on desktop screens.
 
 
 ## Built With
