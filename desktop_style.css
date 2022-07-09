@@ -26,7 +26,6 @@
   }
 
   main {
-    width: 100vw;
     background: #e5e5e5;
     display: grid;
     grid-template-columns: 100%;
@@ -34,7 +33,6 @@
   }
 
   .intro_page {
-    height: 100vh;
     background: #fff;
   }
 
@@ -72,17 +70,17 @@
   }
 
   .background_content {
+    display: flex;
+    justify-content: center;
     margin-top: 46px;
-    width: 97.04vw;
-    padding-left: 2.402vw;
-    padding-right: 0.555vw;
     background-image: url(./images/Header.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 721.46px;
   }
 
   .content {
-    padding-left: 18.055vw;
-    padding-right: 18.055vw;
+    width: 63.888vw;
   }
 
   .content h1 {
@@ -385,7 +383,7 @@
     margin-top: 134px;
     height: 779px;
     background: #6070ff;
-    background-position: 153px;
+    background-size: cover;
     background-image: url(./images/contact_form_background_shapes_desktop.svg);
     border-top-left-radius: 60px;
     background-repeat: no-repeat;
