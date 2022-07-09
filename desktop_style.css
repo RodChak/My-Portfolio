@@ -179,8 +179,10 @@
     
   }
 
-
-
+  .card img:hover {
+    transform: scale(1.02);
+  }
+  
   .card h2 {
     font-weight: 700;
     font-size: 40px;
