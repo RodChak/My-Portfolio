@@ -124,7 +124,7 @@
 
   .Works_Section {
     width: 100vw;
-    background: #e5e5e5;
+    background: #fff;
     display: grid;
     grid-template-columns: 80%;
     grid-template-rows: 24% 24% 24% 24%;
@@ -141,6 +141,9 @@
     background: #fff;
     border: 1px solid #dfe1e6;
     border-radius: 24px;
+    padding-top: 114px;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
   }
 
   .card_2 img {
@@ -152,10 +155,8 @@
   }
 
   .card img {
-    margin-left: 1.666vw;
     margin-bottom: 24px;
     margin-top: 24px;
-    margin-right: 1.527vw;
     width: 37.777vw;
     height: 448px;
   }
