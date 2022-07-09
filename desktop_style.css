@@ -176,7 +176,6 @@
     margin-top: 24px;
     width: 37.777vw;
     height: 448px;
-    
   }
 
   .card img:hover {
@@ -447,6 +446,10 @@
     width: 31.041vw;
   }
 
+  .field:hover {
+   transform: translateX(10px);
+  }
+
   .field3 {
     background: #fff;
     border: 1px solid #cfd8dc;
@@ -457,6 +460,10 @@
     margin: 10px 24px 5px 24px;
     width: 31.04vw;
     height: 170px;
+  }
+
+  .field3:hover {
+    transform: translate(10px);
   }
 
   .background button {
