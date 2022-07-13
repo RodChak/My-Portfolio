@@ -14,7 +14,7 @@
 
   button:hover {
     cursor: pointer;
-    background: #6070ff;
+    background: #5263FF;
   }
 
   button:active {
@@ -55,11 +55,11 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
-    color: #6070ff;
+    color: #5263FF;
   }
 
   .material-symbols-outlined {
-    color: #6070ff;
+    color: #5263FF;
   }
 
   .background_content {
@@ -97,7 +97,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    color: #7f8cff;
+    color: #5263FF;
   }
 
   .social-media-icons {
@@ -227,7 +227,7 @@
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.03em;
-    color: #6070ff;
+    color: #5263FF;
     border-radius: 8px;
     background: #ebebff;
     border: none;
@@ -241,7 +241,7 @@
     letter-spacing: 0.03em;
     color: #396df2;
     padding: 12px;
-    border: 1px solid #6070ff;
+    border: 1px solid #5263FF;
     border-radius: 8px;
   }
 
@@ -275,7 +275,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    color: #7f8cff;
+    color: #5263FF;
   }
 
   .social-media-icons_2 {
@@ -293,7 +293,7 @@
     letter-spacing: 0.03em;
     color: #396df2;
     margin-top: 12px;
-    border: 1px solid #6070ff;
+    border: 1px solid #5263FF;
     border-radius: 8px;
     width: 162px;
     height: 48px;
@@ -353,7 +353,7 @@
     margin-top: 10px;
     border: none;
     letter-spacing: 0.03em;
-    color: #6070ff;
+    color: #5263FF;
     font-weight: 500;
     font-size: 17px;
     line-height: 24px;
@@ -383,7 +383,7 @@
     flex-direction: column;
     margin-top: 500px;
     height: 779px;
-    background: #6070ff;
+    background: #5263FF;
     background-position: 153px;
     background-image: url(./images/contactform.svg);
     border-top-left-radius: 60px;
@@ -404,7 +404,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
-    color: #ebebff;
+    color: #FFFFFF;
     text-align: center;
     margin: 0 24px 24px 24px;
   }
@@ -414,7 +414,7 @@
     flex-direction: column;
   }
 
-  .field {
+  #user-name {
     background: #fff;
     border: 1px solid #cfd8dc;
     border-radius: 8px;
@@ -426,7 +426,19 @@
     width: 86.6vw;
   }
 
-  .field3 {
+  #user-email {
+    background: #fff;
+    border: 1px solid #cfd8dc;
+    border-radius: 8px;
+    padding: 15px 16px 15px 16px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    margin: 10px 24px 10px 24px;
+    width: 86.6vw;
+  }
+
+  #field3 {
     background: #fff;
     border: 1px solid #cfd8dc;
     border-radius: 8px;
@@ -443,5 +455,9 @@
     display: flex;
     justify-content: center;
     margin-top: 48px;
+  }
+
+  label {
+    display: none;
   }
 }
