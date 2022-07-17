@@ -23,7 +23,7 @@
 
 ## Webpage user Interface Screenshot
 
-[Demo](/website_Screenshot.jpg)
+[Mobile Screenshot](/website_Screenshot.jpg)
 
 
 ## Authors
