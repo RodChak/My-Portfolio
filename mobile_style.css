@@ -14,7 +14,7 @@
 
   button:hover {
     cursor: pointer;
-    background: #5263FF;
+    background: #5263ff;
   }
 
   button:active {
@@ -55,11 +55,11 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
-    color: #5263FF;
+    color: #5263ff;
   }
 
   .material-symbols-outlined {
-    color: #5263FF;
+    color: #5263ff;
   }
 
   .background_content {
@@ -97,7 +97,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    color: #5263FF;
+    color: #5263ff;
   }
 
   .social-media-icons {
@@ -227,7 +227,7 @@
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.03em;
-    color: #5263FF;
+    color: #5263ff;
     border-radius: 8px;
     background: #ebebff;
     border: none;
@@ -241,7 +241,7 @@
     letter-spacing: 0.03em;
     color: #396df2;
     padding: 12px;
-    border: 1px solid #5263FF;
+    border: 1px solid #5263ff;
     border-radius: 8px;
   }
 
@@ -275,7 +275,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    color: #5263FF;
+    color: #5263ff;
   }
 
   .social-media-icons_2 {
@@ -293,7 +293,7 @@
     letter-spacing: 0.03em;
     color: #396df2;
     margin-top: 12px;
-    border: 1px solid #5263FF;
+    border: 1px solid #5263ff;
     border-radius: 8px;
     width: 162px;
     height: 48px;
@@ -353,7 +353,7 @@
     margin-top: 10px;
     border: none;
     letter-spacing: 0.03em;
-    color: #5263FF;
+    color: #5263ff;
     font-weight: 500;
     font-size: 17px;
     line-height: 24px;
@@ -383,7 +383,7 @@
     flex-direction: column;
     margin-top: 500px;
     height: 779px;
-    background: #5263FF;
+    background: #5263ff;
     background-position: 153px;
     background-image: url(./images/contactform.svg);
     border-top-left-radius: 60px;
@@ -404,7 +404,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
-    color: #FFFFFF;
+    color: #fff;
     text-align: center;
     margin: 0 24px 24px 24px;
   }
