@@ -13,7 +13,7 @@
 
   button:hover {
     cursor: pointer;
-    background: #5263FF;
+    background: #5263ff;
   }
 
   button:active {
@@ -44,16 +44,12 @@
     justify-content: space-between;
   }
 
-  .material-symbols-outlined mobile {
-    display: none;
-  }
-
   header a {
     text-decoration: none;
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
-    color: #5263FF;
+    color: #5263ff;
   }
 
   .menu_bar {
@@ -110,7 +106,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    color: #5263FF;
+    color: #5263ff;
   }
 
   .social-media-icons {
@@ -230,7 +226,7 @@
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.03em;
-    color: #5263FF;
+    color: #5263ff;
   }
 
   .tags button {
@@ -238,7 +234,7 @@
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.03em;
-    color: #3D51FF;
+    color: #3d51ff;
     border-radius: 8px;
     background: #ebebff;
     border: none;
@@ -250,9 +246,9 @@
     font-size: 17px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    color: #2861F0;
+    color: #2861f0;
     padding: 12px;
-    border: 1px solid #5263FF;
+    border: 1px solid #5263ff;
     border-radius: 8px;
   }
 
@@ -290,7 +286,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    color: #5263FF;
+    color: #5263ff;
   }
 
   .split {
@@ -338,9 +334,9 @@
     font-size: 17px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    color: #2660F2;
+    color: #2660f2;
     margin-top: 12px;
-    border: 1px solid #5263FF;
+    border: 1px solid #5263ff;
     border-radius: 8px;
     width: 162px;
     height: 48px;
@@ -386,7 +382,7 @@
     align-items: center;
     margin-top: 134px;
     height: 779px;
-    background:#5263FF;
+    background: #5263ff;
     background-size: cover;
     background-image: url(./images/contact_form_background_shapes_desktop.svg);
     border-top-left-radius: 60px;
@@ -407,7 +403,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
-    color: #FFFFFF;
+    color: #fff;
     text-align: center;
     margin: 0 24px 24px 24px;
     width: 39.513vw;
@@ -431,19 +427,19 @@
   }
 
   #user-email {
-      background: #fff;
-      border: 1px solid #cfd8dc;
-      padding: 15px 16px 15px 16px;
-      font-weight: 400;
-      font-size: 17px;
-      line-height: 20px;
-      margin: 10px 24px 10px 24px;
-      width: 31.041vw;
-    }
+    background: #fff;
+    border: 1px solid #cfd8dc;
+    padding: 15px 16px 15px 16px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    margin: 10px 24px 10px 24px;
+    width: 31.041vw;
+  }
 
-  #user-name:hover, 
+  #user-name:hover,
   #user-email:hover {
-      transform: translateX(10px);
+    transform: translateX(10px);
   }
 
   #field3 {
@@ -470,7 +466,7 @@
     margin-top: 10px;
     border: none;
     letter-spacing: 0.03em;
-    color: #5263FF;
+    color: #5263ff;
     font-weight: 500;
     font-size: 17px;
     line-height: 24px;
