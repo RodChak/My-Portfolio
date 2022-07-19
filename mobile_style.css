@@ -58,8 +58,19 @@
     color: #5263ff;
   }
 
-  .material-symbols-outlined {
-    color: #5263ff;
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #5263ff;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
   .background_content {
