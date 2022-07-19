@@ -63,7 +63,16 @@
     cursor: pointer;
   }
 
-  
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #5263ff;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
   /* code fo making hamburger menu turn into an X */
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
@@ -107,16 +116,6 @@
 
   .menu_bar.active {
     left: 0;
-  }
-
-  .bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    background-color: #5263ff;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
   }
 
   .background_content {
@@ -170,7 +169,7 @@
     list-style: none;
   }
 
-  .Works_Section {
+  #Works_Section {
     display: grid;
     grid-template-columns: 80%;
     grid-template-rows: 24% 24% 24% 24%;
@@ -431,7 +430,7 @@
     background: none;
   }
 
-  .contact_form {
+  #contact_form {
     margin-top: 150px;
   }
 
