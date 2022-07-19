@@ -69,6 +69,10 @@
     color: #344563;
   }
 
+  .hamburger {
+    display: none;
+  }
+
   .background_content {
     display: flex;
     justify-content: center;
