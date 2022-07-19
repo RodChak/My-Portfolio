@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', () => {
 const hamburger = document.querySelector('.hamburger');
 const menuBar = document.querySelector('.menu_bar');
 
@@ -10,3 +11,4 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   hamburger.classList.remove('active');
   menuBar.classList.remove('active');
 }));
+});
