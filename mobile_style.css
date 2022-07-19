@@ -62,7 +62,6 @@
     display: block;
     cursor: pointer;
     margin-right: 3.2vw;
-    
   }
 
   .bar {
@@ -94,11 +93,12 @@
     position: fixed;
     left: -100%;
     flex-direction: column;
-    background: #6070FF;
+    background: #6070ff;
     mix-blend-mode: multiply;
     backdrop-filter: blur(6px);
     width: 100%;
     height: 100%;
+
     /* text-align: start; */
     transition: 0.1s;
   }
@@ -120,7 +120,7 @@
 
   .menu_bar.active {
     left: 0;
-    top: 0px;
+    top: 0;
   }
 
   .background_content {
