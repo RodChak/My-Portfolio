@@ -7,6 +7,7 @@
 > For the third milestone of my portfolio website, I will add a contact form to my portfolio. I will also make sure that I guide my users' experience in a way that helps them fill in the form without frustration.
 > For the fourth milestone in my portfolio website, I will use media queries to make sure that your website displays correctly on desktop screens.
 > For the fifth milestone I will make my website available online.
+> For the sixth milestone I will implemenent some features on the the mobile hamburger menu
 
 
 
@@ -18,12 +19,12 @@
 
 ## Built With
 
-- Languages used HTML, CSS, FIGMA.
+- Languages used HTML, CSS, Javascript.
 - Technologies used Github, Git, VSCode.
 
 ## Webpage user Interface Screenshot
 
-[Mobile Screenshot](/website_Screenshot.jpg)
+[Mobile Version Screenshot](/website_Screenshot.jpg)
 
 
 ## Authors

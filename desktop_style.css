@@ -69,6 +69,10 @@
     color: #344563;
   }
 
+  .hamburger {
+    display: none;
+  }
+
   .background_content {
     display: flex;
     justify-content: center;
@@ -120,7 +124,7 @@
     list-style: none;
   }
 
-  .Works_Section {
+  #Works_Section {
     width: 100vw;
     background: #fff;
     display: grid;
@@ -371,7 +375,7 @@
     height: 20px;
   }
 
-  .contact_form {
+  #contact_form {
     margin-top: 150px;
   }
 
