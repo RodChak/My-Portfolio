@@ -80,7 +80,7 @@ document.getElementById('Works_Section').innerHTML = `
           <li><a>${projects[0].technologies[2]}</a></li>
       </ul>
     </div>
-    <div data-modal-target="#modal" id="project1" class="seebutton">
+    <div data-modal-target="#modal" id="project1" class="seebutton0">
           <button type="button">See Project</button>
     </div>
   </div>
@@ -101,7 +101,7 @@ document.getElementById('Works_Section').innerHTML = `
       </ul>
     </div>
     <div class="featuredimage">
-      <img src= ${projects[1].image} alt="Snapshoot_Portfolio_5" class="project-image-desktop" id="project-image-desktop">
+      <img src= ${projects[0].image} alt="Snapshoot_Portfolio_5" class="project-image-desktop" id="project-image-desktop">
     </div>
     <div class="projectbody">
       <div id="modal-supporting-text">
@@ -111,12 +111,12 @@ document.getElementById('Works_Section').innerHTML = `
         <div></div>
         <div id="modaltags1" class="modaltags1">
           <ul class="flex-wrap">
-            <li><button type="button">${projects[0].technologies[0]}</button></li>
-            <li><button type="button">${projects[0].technologies[1]}</button></li>
-            <li><button type="button">${projects[0].technologies[2]}</button></li>
-            <li><button type="button">${projects[0].technologies[3]}</button></li>
-            <li><button type="button">${projects[0].technologies[4]}</button></li>
-            <li><button type="button">${projects[0].technologies[5]}</button></li>
+            <li><a>${projects[0].technologies[0]}</a></li>
+            <li><a>${projects[0].technologies[1]}</a></li>
+            <li><a>${projects[0].technologies[2]}</a></li>
+            <li><a>${projects[0].technologies[3]}</a></li>
+            <li><a>${projects[0].technologies[4]}</a></li>
+            <li><a>${projects[0].technologies[5]}</a></li>
           </ul>
         </div>
         <div id ="modalbottombuttons">
@@ -158,13 +158,13 @@ document.getElementById('Works_Section').innerHTML = `
           story over the course of a day without spamming their friends.</p>
       <div class="tags">
           <ul>
-              <li><a>${projects[1].technologies[0]}</a></li>
+              <li><a>${projects[0].technologies[0]}</a></li>
               <li class = "tags desktop"><a>${projects[1].technologies[1]}</a></li>
+              <li><a>${projects[1].technologies[1]}</a></li>
               <li><a>${projects[1].technologies[2]}</a></li>
-              <li><a>${projects[1].technologies[3]}</a></li>
           </ul>
       </div>
-      <div data-modal-target="#modal" id="project2" class="seebutton">
+      <div data-modal-target="#modal" id="project2" class="seebutton1">
           <button type="button">See Project</button>
       </div>
   </div>
@@ -207,7 +207,7 @@ document.getElementById('Works_Section').innerHTML = `
               <li><a>${projects[2].technologies[3]}</a></li>
           </ul>
       </div>
-      <div data-modal-target="#modal" id="project3" class="seebutton" class="see_project_button">
+      <div data-modal-target="#modal" id="project3" class="seebutton2">
           <button type="button">See Project</button>
       </div>
   </div>
@@ -250,9 +250,9 @@ document.getElementById('Works_Section').innerHTML = `
             <li><a>${projects[3].technologies[3]}</a></li>
         </ul>
     </div>
-    <div data-modal-target="#modal" id="project4" class="seebutton" class="see_project_button">
-        <button type="button">See Project</button>
-    </div>
+    <div data-modal-target="#modal" id="project4" class="seebutton3">
+          <button type="button">See Project</button>
+      </div>
 </div>
 </div>
 `;
@@ -296,9 +296,9 @@ backdrop.addEventListener("click", ()=> {
 });
 
 
-openModalButtons.forEach((button) => {
+openButton.forEach((button) => {
   button.addEventListener('click', (event) => {
-    if (event.currentTarget.id === 'project1') {
+    if (event.currentTarget.classList[0] === 'seebutton0') {
       (document.getElementById('project-image-desktop').src = projects[0].image)(document.getElementById('modaltitle').innerHTML = projects[0].title)(document.getElementById('modalbottombuttons').innerHTML = `<button action="${projects[0].See_Live}" type="submit">See Live <i class="fa-solid fa-up-right-from-square"></i></button>
                     <button action="${projects[0].Source}" type="submit">See Source <i class="fa-brands fa-github"></i></button>`)(document.getElementById('modaltags1').innerHTML = `
                     <li><p>${projects[0].technologies[0]}</p></li>
@@ -307,21 +307,21 @@ openModalButtons.forEach((button) => {
                     <li><p>${projects[0].technologies[3]}</p></li>
                     <li><p>${projects[0].technologies[4]}</p></li>
                     <li><p>${projects[0].technologies[5]}</p></li>`)(document.getElementById('project-supporting-text').innerHTML = projects[0].description);
-    } else if (event.currentTarget.id === 'project2') {
+    } else if (event.currentTarget.classList[0] === 'seebutton1') {
       (document.getElementById('project-image-desktop').src = projects[1].image)(document.getElementById('modaltitle').innerHTML = projects[1].title)(document.getElementById('modalbottombuttons').innerHTML = `<button action="${projects[1].See_Live}" type="submit">See Live <i class="fa-solid fa-up-right-from-square"></i></button>
-                      <button action="${projects[1].Source}" type="submit">See Source <i class="fa-brands fa-github"></i></button>`)(document.getElementById('modaltags1').innerHTML = `
+                      <button action="${projects[1].Source}" type="submit">See Source <i class="fa-brands fa-github"></i></button>`)(document.getElementsById('modaltags1').innerHTML = `
                       <li><p>${projects[1].technologies[0]}</p></li>
                       <li><p>${projects[1].technologies[1]}</p></li>
                       <li><p>${projects[1].technologies[2]}</p></li>
                       <li><p>${projects[1].technologies[3]}</p></li>`)
                       (document.getElementById('modal-supporting-text').innerHTML = projects[1].description);
-    } else if (event.currentTarget.id === 'project3') {
+    } else if (event.currentTarget.classList[0] === "seebutton2") {
       (document.getElementById('project-image-desktop').src = projects[2].image)(document.getElementById('modaltitle').innerHTML = projects[2].title)(document.getElementById('modalbottombuttons').innerHTML = `<button action="${projects[2].See_Live}" type="submit">See Live <i class="fa-solid fa-up-right-from-square"></i></button>
                         <button action="${projects[2].Source}" type="submit">See Source <i class="fa-brands fa-github"></i></button>`)(document.getElementById('modaltags1').innerHTML = `<li><p>${projects[2].technologies[0]}</p></li>
                         <li><p>${projects[2].technologies[1]}</p></li>
                         <li><p>${projects[2].technologies[2]}</p></li>
                         <li><p>${projects[2].technologies[3]}</p></li>`)(document.getElementById('modal-supporting-text').innerHTML = projects[2].description);
-    } else if (event.currentTarget.id === 'project4') {
+    } else if (event.currentTarget.classList[0] === 'seebutton3') {
       (document.getElementById('project-image-desktop').src = projects[3].image)(document.getElementById('modaltitle').innerHTML = projects[3].title)(document.getElementById('modalbottombuttons').innerHTML = `<button action="${projects[3].See_Live}" type="submit">See Live <i class="fa-solid fa-up-right-from-square"></i></button>
                           <button action="${projects[3].Source}" type="submit">See Source <i class="fa-brands fa-github"></i></button>`)(document.getElementById('tags').innerHTML = `<li><p>${projects[3].technologies[0]}</p></li>
                           <li><p>${projects[3].technologies[1]}</p></li>
