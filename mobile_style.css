@@ -283,7 +283,7 @@
     padding-top: 0;
   }
 
-  .tags button {
+  .tags ul li a {
     font-weight: 500;
     font-size: 12px;
     line-height: 16px;
@@ -295,7 +295,7 @@
     padding: 8px 15px 8px 15px;
   }
 
-  .see_project_button button {
+  .seebutton button {
     font-weight: 500;
     font-size: 17px;
     line-height: 24px;
