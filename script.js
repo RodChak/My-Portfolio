@@ -299,34 +299,59 @@ backdrop.addEventListener("click", ()=> {
 openButton.forEach((button) => {
   button.addEventListener('click', (event) => {
     if (event.currentTarget.classList[0] === 'seebutton0') {
-      (document.getElementById('project-image-desktop').src = projects[0].image)(document.getElementById('modaltitle').innerHTML = projects[0].title)(document.getElementById('modalbottombuttons').innerHTML = `<button action="${projects[0].See_Live}" type="submit">See Live <i class="fa-solid fa-up-right-from-square"></i></button>
-                    <button action="${projects[0].Source}" type="submit">See Source <i class="fa-brands fa-github"></i></button>`)(document.getElementById('modaltags1').innerHTML = `
-                    <li><p>${projects[0].technologies[0]}</p></li>
-                    <li><p>${projects[0].technologies[1]}</p></li>
-                    <li><p>${projects[0].technologies[2]}</p></li>
-                    <li><p>${projects[0].technologies[3]}</p></li>
-                    <li><p>${projects[0].technologies[4]}</p></li>
-                    <li><p>${projects[0].technologies[5]}</p></li>`)(document.getElementById('project-supporting-text').innerHTML = projects[0].description);
+      document.getElementById('project-image-desktop').src = projects[0].image
+      document.getElementById('modaltitle').innerHTML = projects[0].title
+      document.getElementById('modalbottombuttons').innerHTML = `<button action="${projects[0].See_Live}" type="submit">See Live <i class="fa-solid fa-up-right-from-square"></i></button>
+        <button action="${projects[0].Source}" type="submit">See Source <i class="fa-brands fa-github"></i></button>`
+        document.getElementById('modaltags1').innerHTML = `
+        <ul class="flex-wrap">
+        <li><p>${projects[0].technologies[0]}</p></li>
+        <li><p>${projects[0].technologies[1]}</p></li>
+        <li><p>${projects[0].technologies[2]}</p></li>
+        <li><p>${projects[0].technologies[3]}</p></li>
+        <li><p>${projects[0].technologies[4]}</p></li>
+        <li><p>${projects[0].technologies[5]}</p></li>
+        </ul>`
     } else if (event.currentTarget.classList[0] === 'seebutton1') {
-      (document.getElementById('project-image-desktop').src = projects[1].image)(document.getElementById('modaltitle').innerHTML = projects[1].title)(document.getElementById('modalbottombuttons').innerHTML = `<button action="${projects[1].See_Live}" type="submit">See Live <i class="fa-solid fa-up-right-from-square"></i></button>
-                      <button action="${projects[1].Source}" type="submit">See Source <i class="fa-brands fa-github"></i></button>`)(document.getElementsById('modaltags1').innerHTML = `
-                      <li><p>${projects[1].technologies[0]}</p></li>
-                      <li><p>${projects[1].technologies[1]}</p></li>
-                      <li><p>${projects[1].technologies[2]}</p></li>
-                      <li><p>${projects[1].technologies[3]}</p></li>`)
-                      (document.getElementById('modal-supporting-text').innerHTML = projects[1].description);
+      document.getElementById('project-image-desktop').src = projects[1].image
+      document.getElementById('modaltitle').innerHTML = projects[1].title
+      document.getElementById('modalbottombuttons').innerHTML = `<button action="${projects[1].See_Live}" type="submit">See Live <i class="fa-solid fa-up-right-from-square"></i></button>
+        <button action="${projects[1].Source}" type="submit">See Source <i class="fa-brands fa-github"></i></button>`
+        document.getElementById('modaltags1').innerHTML = `
+        <ul class="flex-wrap">
+        <li><p>${projects[1].technologies[0]}</p></li>
+        <li><p>${projects[1].technologies[1]}</p></li>
+        <li><p>${projects[1].technologies[2]}</p></li>
+        <li><p>${projects[1].technologies[3]}</p></li>
+        <ul>`
+        document.getElementById('modal-supporting-text').innerHTML = projects[1].description;
     } else if (event.currentTarget.classList[0] === "seebutton2") {
-      (document.getElementById('project-image-desktop').src = projects[2].image)(document.getElementById('modaltitle').innerHTML = projects[2].title)(document.getElementById('modalbottombuttons').innerHTML = `<button action="${projects[2].See_Live}" type="submit">See Live <i class="fa-solid fa-up-right-from-square"></i></button>
-                        <button action="${projects[2].Source}" type="submit">See Source <i class="fa-brands fa-github"></i></button>`)(document.getElementById('modaltags1').innerHTML = `<li><p>${projects[2].technologies[0]}</p></li>
-                        <li><p>${projects[2].technologies[1]}</p></li>
-                        <li><p>${projects[2].technologies[2]}</p></li>
-                        <li><p>${projects[2].technologies[3]}</p></li>`)(document.getElementById('modal-supporting-text').innerHTML = projects[2].description);
+      document.getElementById('project-image-desktop').src = projects[2].image
+      document.getElementById('modaltitle').innerHTML = projects[2].title
+      document.getElementById('modalbottombuttons').innerHTML = `
+        <button action="${projects[2].See_Live}" type="submit">See Live <i class="fa-solid fa-up-right-from-square"></i></button>
+        <button action="${projects[2].Source}" type="submit">See Source <i class="fa-brands fa-github"></i></button>`
+        document.getElementById('modaltags1').innerHTML = `
+        <ul class="flex-wrap">
+        <li><p>${projects[2].technologies[0]}</p></li>
+        <li><p>${projects[2].technologies[1]}</p></li>
+        <li><p>${projects[2].technologies[2]}</p></li>
+        <li><p>${projects[2].technologies[3]}</p></li>
+        <ul>`
+        document.getElementById('modal-supporting-text').innerHTML = projects[2].description;
     } else if (event.currentTarget.classList[0] === 'seebutton3') {
-      (document.getElementById('project-image-desktop').src = projects[3].image)(document.getElementById('modaltitle').innerHTML = projects[3].title)(document.getElementById('modalbottombuttons').innerHTML = `<button action="${projects[3].See_Live}" type="submit">See Live <i class="fa-solid fa-up-right-from-square"></i></button>
-                          <button action="${projects[3].Source}" type="submit">See Source <i class="fa-brands fa-github"></i></button>`)(document.getElementById('tags').innerHTML = `<li><p>${projects[3].technologies[0]}</p></li>
-                          <li><p>${projects[3].technologies[1]}</p></li>
-                          <li><p>${projects[3].technologies[2]}</p></li>
-                          <li><p>${projects[3].technologies[3]}</p></li>`)(document.getElementById('modal-supporting-text').innerHTML = projects[3].description);
+      document.getElementById('project-image-desktop').src = projects[3].image
+      document.getElementById('modaltitle').innerHTML = projects[3].title
+      document.getElementById('modalbottombuttons').innerHTML = `<button action="${projects[3].See_Live}" type="submit">See Live <i class="fa-solid fa-up-right-from-square"></i></button>
+        <button action="${projects[3].Source}" type="submit">See Source <i class="fa-brands fa-github"></i></button>`
+        document.getElementById('modaltags1').innerHTML = `
+        <ul class="flex-wrap">
+        <li><p>${projects[3].technologies[0]}</p></li>
+        <li><p>${projects[3].technologies[1]}</p></li>
+        <li><p>${projects[3].technologies[2]}</p></li>
+        <li><p>${projects[3].technologies[3]}</p></li>
+        </ul>`
+        document.getElementById('modal-supporting-text').innerHTML = projects[3].description;
     }
   });
 });
