@@ -467,6 +467,7 @@
     background-image: url(./images/contactform.svg);
     border-top-left-radius: 60px;
     background-repeat: no-repeat;
+    height: auto;
   }
 
   .background h2 {
