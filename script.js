@@ -13,11 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }));
 });
 
-
-
-
-
-
 const projects = [
   {
     title: 'Tonic',
@@ -55,7 +50,7 @@ const projects = [
     See_Live: '#',
     Source: '#',
   },
-]
+];
 
 document.getElementById('Works_Section').innerHTML = `
 <div class="card card_1">
@@ -258,52 +253,51 @@ document.getElementById('Works_Section').innerHTML = `
 `;
 
 // code for apearing and disapearing of modal
-const openButton = document.querySelectorAll("[data-modal-target]");
-const closeButton = document.querySelectorAll("[data-close-button]");
-
+const openButton = document.querySelectorAll('[data-modal-target]');
+const closeButton = document.querySelectorAll('[data-close-button]');
+const backdrop = document.getElementById('backdrop');
 
 function openModal(modal) {
   if (modal === null) return;
-  modal.classList.add("active")
-  backdrop.classList.add("active")
+  modal.classList.add('active');
+  backdrop.classList.add('active');
 }
 
 function closeModal(modal) {
   if (modal === null) return;
-  modal.classList.remove("active")
-  backdrop.classList.remove("active")
+  modal.classList.remove('active');
+  backdrop.classList.remove('active');
 }
 
 openButton.forEach((button) => {
-  button.addEventListener("click", () => {
+  button.addEventListener('click', () => {
     const modal = document.querySelector(button.dataset.modalTarget);
     openModal(modal);
   });
 });
 
-closeButton.forEach((button)=> {
-  button.addEventListener("click", ()=>{
-    const modal = button.closest(".modal")
-    closeModal (modal);
+closeButton.forEach((button) => {
+  button.addEventListener('click', () => {
+    const modal = button.closest('.modal');
+    closeModal(modal);
   });
 });
 
-backdrop.addEventListener("click", ()=> {
-  const modals = document.querySelectorAll(".modal.active")
-  modals.forEach((modal)=> {
+backdrop.addEventListener('click', () => {
+  const modals = document.querySelectorAll('.modal.active');
+  modals.forEach((modal) => {
     closeModal(modal);
-  }); 
+  });
 });
-
 
 openButton.forEach((button) => {
   button.addEventListener('click', (event) => {
     if (event.currentTarget.classList[0] === 'seebutton0') {
-      document.getElementById('project-image-desktop').src = projects[0].image
-      document.getElementById('modaltitle').innerHTML = projects[0].title
+      document.getElementById('project-image-desktop').src = projects[0].image;
+      document.getElementById('modaltitle').innerHTML = projects[0].title;
       document.getElementById('modalbottombuttons').innerHTML = `
         <button action="${projects[0].See_Live}" type="submit" class="seelive">See Live <img class="seelive_icon" src="./images/seelive.svg" alt="seelive_icon"></button>
-        <button action="${projects[0].Source}" type="submit" class="seesource">See Source <img class="seeSource" src="./images/seeSource.svg" alt="seesource_icon"></button>`
+        <button action="${projects[0].Source}" type="submit" class="seesource">See Source <img class="seeSource" src="./images/seeSource.svg" alt="seesource_icon"></button>`;
       document.getElementById('modaltags1').innerHTML = `
         <ul class="flex-wrap">
         <li><a>${projects[0].technologies[0]}</a></li>
@@ -312,49 +306,49 @@ openButton.forEach((button) => {
         <li><a>${projects[0].technologies[3]}</a></li>
         <li><a>${projects[0].technologies[4]}</a></li>
         <li><a>${projects[0].technologies[5]}</a></li>
-        </ul>`
-      document.getElementById('modal-supporting-text').innerHTML = projects[0].description
+        </ul>`;
+      document.getElementById('modal-supporting-text').innerHTML = projects[0].description;
     } else if (event.currentTarget.classList[0] === 'seebutton1') {
-      document.getElementById('project-image-desktop').src = projects[1].image
-      document.getElementById('modaltitle').innerHTML = projects[1].title
+      document.getElementById('project-image-desktop').src = projects[1].image;
+      document.getElementById('modaltitle').innerHTML = projects[1].title;
       document.getElementById('modalbottombuttons').innerHTML = `
         <button action="${projects[1].See_Live}" type="submit" class="seelive">See Live <img class="seelive_icon" src="./images/seelive.svg" alt="seelive_icon"></button>
-        <button action="${projects[1].Source}" type="submit" class="seesource">See Source <img class="seeSource" src="./images/seeSource.svg" alt="seesource_icon"></button>`
+        <button action="${projects[1].Source}" type="submit" class="seesource">See Source <img class="seeSource" src="./images/seeSource.svg" alt="seesource_icon"></button>`;
       document.getElementById('modaltags1').innerHTML = `
         <ul class="flex-wrap">
         <li><a>${projects[1].technologies[0]}</a></li>
         <li><a>${projects[1].technologies[1]}</a></li>
         <li><a>${projects[1].technologies[2]}</a></li>
         <li><a>${projects[1].technologies[3]}</a></li>
-        <ul>`
+        <ul>`;
       document.getElementById('modal-supporting-text').innerHTML = projects[1].description;
-    } else if (event.currentTarget.classList[0] === "seebutton2") {
-      document.getElementById('project-image-desktop').src = projects[2].image
-      document.getElementById('modaltitle').innerHTML = projects[2].title
+    } else if (event.currentTarget.classList[0] === 'seebutton2') {
+      document.getElementById('project-image-desktop').src = projects[2].image;
+      document.getElementById('modaltitle').innerHTML = projects[2].title;
       document.getElementById('modalbottombuttons').innerHTML = `
         <button action="${projects[2].See_Live}" type="submit" class="seelive">See Live <img class="seelive_icon" src="./images/seelive.svg" alt="seelive_icon"></button>
-        <button action="${projects[2].Source}" type="submit" class="seesource">See Source <img class="seeSource" src="./images/seeSource.svg" alt="seesource_icon"></button>`
+        <button action="${projects[2].Source}" type="submit" class="seesource">See Source <img class="seeSource" src="./images/seeSource.svg" alt="seesource_icon"></button>`;
       document.getElementById('modaltags1').innerHTML = `
         <ul class="flex-wrap">
         <li><a>${projects[2].technologies[0]}</a></li>
         <li><a>${projects[2].technologies[1]}</a></li>
         <li><a>${projects[2].technologies[2]}</a></li>
         <li><a>${projects[2].technologies[3]}</a></li>
-        <ul>`
+        <ul>`;
       document.getElementById('modal-supporting-text').innerHTML = projects[2].description;
     } else if (event.currentTarget.classList[0] === 'seebutton3') {
-      document.getElementById('project-image-desktop').src = projects[3].image
-      document.getElementById('modaltitle').innerHTML = projects[3].title
+      document.getElementById('project-image-desktop').src = projects[3].image;
+      document.getElementById('modaltitle').innerHTML = projects[3].title;
       document.getElementById('modalbottombuttons').innerHTML = `
         <button action="${projects[3].See_Live}" type="submit" class="seelive">See Live <img class="seelive_icon" src="./images/seelive.svg" alt="seelive_icon"></button>
-        <button action="${projects[3].Source}" type="submit" class="seesource">See Source <img class="seeSource" src="./images/seeSource.svg" alt="seesource_icon"></button>`
+        <button action="${projects[3].Source}" type="submit" class="seesource">See Source <img class="seeSource" src="./images/seeSource.svg" alt="seesource_icon"></button>`;
       document.getElementById('modaltags1').innerHTML = `
         <ul class="flex-wrap">
         <li><a>${projects[3].technologies[0]}</a></li>
         <li><a>${projects[3].technologies[1]}</a></li>
         <li><a>${projects[3].technologies[2]}</a></li>
         <li><a>${projects[3].technologies[3]}</a></li>
-        </ul>`
+        </ul>`;
       document.getElementById('modal-supporting-text').innerHTML = projects[3].description;
     }
   });
