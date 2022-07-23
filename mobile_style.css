@@ -542,7 +542,7 @@
 
   .modal {
     position: fixed;
-    top: 45%;
+    top: 47%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     background-color: #fff;
@@ -620,7 +620,8 @@
     font-size: 15px;
     line-height: 24px;
     color: #344563;
-    height: 22vh;
+    height: 21vh;
+    margin-bottom: 1rem;
   }
 
   #backdrop {

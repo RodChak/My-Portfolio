@@ -525,7 +525,7 @@
     border-radius: 16px;
     width: 80.27vw;
     z-index: 10;
-    height: 85vh;
+    height: 90vh;
     transition: 200ms ease-in-out;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -574,20 +574,17 @@
   div .featuredimage {
     max-width: 100%;
     display: flex;
-
-    /* justify-content: center; */
     align-items: center;
     object-fit: contain;
     padding: 0 1rem 0 1rem;
-    height: 34.53vh;
+    height: 38.53vh;
     overflow: hidden;
-
-    /* background-color: #091e42; */
+    margin-bottom: 2rem;
   }
 
   #project-image-desktop {
     width: 100vw;
-    height: 33.53vh;
+    object-fit: fill;
   }
 
   .projectbody {
