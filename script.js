@@ -364,17 +364,18 @@ function validation() {
   const form = document.getElementById('form');
   const email = document.getElementById('user-email').value;
   const text = document.getElementById("text");
-  const pattern = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/gm;;
+  const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 
   if (email.match(pattern)) {
     form.classList.add("valid");
     form.classList.remove("invalid");
-    text.innerHTML = ""
+    text.innerHTML = "Email address should be in lowercase"
+    text.style.color = "#EBEBFF";
+    
   } else {
     form.classList.remove("valid");
     form.classList.add("invalid");
-    text.innerHTML = "Email address should be in lowercase"
-    text.style.color = "#EBEBFF";
+    text.innerHTML = ""
   }
 
   if (email == "") {
