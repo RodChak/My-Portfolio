@@ -364,7 +364,7 @@ function validation() {
   const form = document.getElementById('form');
   const email = document.getElementById('user-email').value;
   const text = document.getElementById("text");
-  const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+  const pattern = /[A-Z]/g;
 
   if (email.match(pattern)) {
     form.classList.add("valid");
