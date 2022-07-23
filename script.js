@@ -22,7 +22,7 @@ const projects = [
   {
     title: 'Tonic',
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     image: './images/Snapshot5.png',
     technologies: ['html', 'css', 'javaScript', 'github', 'ruby', 'Bootsraps'],
     See_Live: '#',
@@ -31,7 +31,7 @@ const projects = [
   {
     title: 'Multi-Post Stories',
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     image: './images/Snapshot4.png',
     technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
     See_Live: '#',
@@ -40,7 +40,7 @@ const projects = [
   {
     title: 'Facebook 360',
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     image: './images/Snapshot1.png',
     technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
     See_Live: '#',
@@ -49,7 +49,7 @@ const projects = [
   {
     title: 'Uber Navigation',
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     image: './images/Snapshot2.png',
     technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
     See_Live: '#',
@@ -60,7 +60,7 @@ const projects = [
 document.getElementById('Works_Section').innerHTML = `
 <div class="card card_1">
   <img class="Snapshoot_Portfolio_1 mobile" src="./images/Snapshot1.png" alt="Snapshoot_Portfolio_1">
-  <img class="Snapshoot_Portfolio_4 desktop" src="./images/Snapshot5.png" alt="Snapshoot_Portfolio_5">
+  <img class="Snapshoot_Portfolio_4 desktop" src= ${projects[0].image} alt="Snapshoot_Portfolio_5">
   <div class="work_cards">
     <h2>${projects[0].title}</h2>
     <div class="frame">
@@ -91,7 +91,7 @@ document.getElementById('Works_Section').innerHTML = `
       <div id="modaltitle" class="modaltitle">${projects[0].title}</div>
       <button data-close-button class="closebutton">&times;</button>
     </div>
-    <div class="frame">
+    <div id="modalframe" class="frame">
       <ul>
         <li class="canopy">CANOPY</li>
         <li class="separator"></li>
@@ -101,7 +101,7 @@ document.getElementById('Works_Section').innerHTML = `
       </ul>
     </div>
     <div class="featuredimage">
-      <img src= ${projects[0].image} alt="Snapshoot_Portfolio_5" class="project-image-desktop" id="project-image-desktop">
+      <img src= ${projects[0].image} alt="project_image" class="project-image-desktop" id="project-image-desktop">
     </div>
     <div class="projectbody">
       <div id="modal-supporting-text">
@@ -131,7 +131,7 @@ document.getElementById('Works_Section').innerHTML = `
 
 <div class="card card_2">
   <img class="Snapshoot_Portfolio_2 mobile" src="./images/Snapshot2.png" alt="Snapshoot_Portfolio_2">
-  <img class="Snapshoot_Portfolio_4 desktop" src="./images/Snapshot4.png" alt="Snapshoot_Portfolio_6">
+  <img class="Snapshoot_Portfolio_4 desktop" src = ${projects[1].image} alt="Snapshoot_Portfolio_6">
   <div class="work_cards">
       <h2>${projects[1].title}</h2>
       <div class="frame mobile">
@@ -173,7 +173,7 @@ document.getElementById('Works_Section').innerHTML = `
 
 <div class="card card_3">
   <img class="Snapshoot_Portfolio_3 mobile" src="./images/Snapshot3.png" alt="Snapshoot_Portfolio_3">
-  <img class="Snapshoot_Portfolio_4 desktop" src="./images/Snapshot1.png" alt="Snapshoot_Portfolio_7">
+  <img class="Snapshoot_Portfolio_4 desktop" src=${projects[2].image} alt="Snapshoot_Portfolio_7">
   <div class="work_cards">
       <h2 class="mobile">Tonic</h2>
       <h2 class="desktop">${projects[2].title} </h2>
@@ -216,7 +216,7 @@ document.getElementById('Works_Section').innerHTML = `
 
 <div class="card card_4">
 <img class="Snapshoot_Portfolio_4 mobile" src="./images/Snapshot4.png" alt="Snapshoot_Portfolio_4">
-<img class="Snapshoot_Portfolio_4 desktop" src="./images/Snapshot2.png" alt="Snapshoot_Portfolio_8">
+<img class="Snapshoot_Portfolio_4 desktop" src=${projects[3].image} alt="Snapshoot_Portfolio_8">
 <div class="work_cards">
     <h2 class="mobile">Multi-Post Stories</h2>
     <h2 class="desktop">${projects[3].title}</h2>
@@ -301,57 +301,61 @@ openButton.forEach((button) => {
     if (event.currentTarget.classList[0] === 'seebutton0') {
       document.getElementById('project-image-desktop').src = projects[0].image
       document.getElementById('modaltitle').innerHTML = projects[0].title
-      document.getElementById('modalbottombuttons').innerHTML = `<button action="${projects[0].See_Live}" type="submit">See Live <i class="fa-solid fa-up-right-from-square"></i></button>
-        <button action="${projects[0].Source}" type="submit">See Source <i class="fa-brands fa-github"></i></button>`
-        document.getElementById('modaltags1').innerHTML = `
+      document.getElementById('modalbottombuttons').innerHTML = `
+        <button action="${projects[0].See_Live}" type="submit" class="seelive">See Live <img class="seelive_icon" src="./images/seelive.svg" alt="seelive_icon"></button>
+        <button action="${projects[0].Source}" type="submit" class="seesource">See Source <img class="seeSource" src="./images/seeSource.svg" alt="seesource_icon"></button>`
+      document.getElementById('modaltags1').innerHTML = `
         <ul class="flex-wrap">
-        <li><p>${projects[0].technologies[0]}</p></li>
-        <li><p>${projects[0].technologies[1]}</p></li>
-        <li><p>${projects[0].technologies[2]}</p></li>
-        <li><p>${projects[0].technologies[3]}</p></li>
-        <li><p>${projects[0].technologies[4]}</p></li>
-        <li><p>${projects[0].technologies[5]}</p></li>
+        <li><a>${projects[0].technologies[0]}</a></li>
+        <li><a>${projects[0].technologies[1]}</a></li>
+        <li><a>${projects[0].technologies[2]}</a></li>
+        <li><a>${projects[0].technologies[3]}</a></li>
+        <li><a>${projects[0].technologies[4]}</a></li>
+        <li><a>${projects[0].technologies[5]}</a></li>
         </ul>`
+      document.getElementById('modal-supporting-text').innerHTML = projects[0].description
     } else if (event.currentTarget.classList[0] === 'seebutton1') {
       document.getElementById('project-image-desktop').src = projects[1].image
       document.getElementById('modaltitle').innerHTML = projects[1].title
-      document.getElementById('modalbottombuttons').innerHTML = `<button action="${projects[1].See_Live}" type="submit">See Live <i class="fa-solid fa-up-right-from-square"></i></button>
-        <button action="${projects[1].Source}" type="submit">See Source <i class="fa-brands fa-github"></i></button>`
-        document.getElementById('modaltags1').innerHTML = `
+      document.getElementById('modalbottombuttons').innerHTML = `
+        <button action="${projects[1].See_Live}" type="submit" class="seelive">See Live <img class="seelive_icon" src="./images/seelive.svg" alt="seelive_icon"></button>
+        <button action="${projects[1].Source}" type="submit" class="seesource">See Source <img class="seeSource" src="./images/seeSource.svg" alt="seesource_icon"></button>`
+      document.getElementById('modaltags1').innerHTML = `
         <ul class="flex-wrap">
-        <li><p>${projects[1].technologies[0]}</p></li>
-        <li><p>${projects[1].technologies[1]}</p></li>
-        <li><p>${projects[1].technologies[2]}</p></li>
-        <li><p>${projects[1].technologies[3]}</p></li>
+        <li><a>${projects[1].technologies[0]}</a></li>
+        <li><a>${projects[1].technologies[1]}</a></li>
+        <li><a>${projects[1].technologies[2]}</a></li>
+        <li><a>${projects[1].technologies[3]}</a></li>
         <ul>`
-        document.getElementById('modal-supporting-text').innerHTML = projects[1].description;
+      document.getElementById('modal-supporting-text').innerHTML = projects[1].description;
     } else if (event.currentTarget.classList[0] === "seebutton2") {
       document.getElementById('project-image-desktop').src = projects[2].image
       document.getElementById('modaltitle').innerHTML = projects[2].title
       document.getElementById('modalbottombuttons').innerHTML = `
-        <button action="${projects[2].See_Live}" type="submit">See Live <i class="fa-solid fa-up-right-from-square"></i></button>
-        <button action="${projects[2].Source}" type="submit">See Source <i class="fa-brands fa-github"></i></button>`
-        document.getElementById('modaltags1').innerHTML = `
+        <button action="${projects[2].See_Live}" type="submit" class="seelive">See Live <img class="seelive_icon" src="./images/seelive.svg" alt="seelive_icon"></button>
+        <button action="${projects[2].Source}" type="submit" class="seesource">See Source <img class="seeSource" src="./images/seeSource.svg" alt="seesource_icon"></button>`
+      document.getElementById('modaltags1').innerHTML = `
         <ul class="flex-wrap">
-        <li><p>${projects[2].technologies[0]}</p></li>
-        <li><p>${projects[2].technologies[1]}</p></li>
-        <li><p>${projects[2].technologies[2]}</p></li>
-        <li><p>${projects[2].technologies[3]}</p></li>
+        <li><a>${projects[2].technologies[0]}</a></li>
+        <li><a>${projects[2].technologies[1]}</a></li>
+        <li><a>${projects[2].technologies[2]}</a></li>
+        <li><a>${projects[2].technologies[3]}</a></li>
         <ul>`
-        document.getElementById('modal-supporting-text').innerHTML = projects[2].description;
+      document.getElementById('modal-supporting-text').innerHTML = projects[2].description;
     } else if (event.currentTarget.classList[0] === 'seebutton3') {
       document.getElementById('project-image-desktop').src = projects[3].image
       document.getElementById('modaltitle').innerHTML = projects[3].title
-      document.getElementById('modalbottombuttons').innerHTML = `<button action="${projects[3].See_Live}" type="submit">See Live <i class="fa-solid fa-up-right-from-square"></i></button>
-        <button action="${projects[3].Source}" type="submit">See Source <i class="fa-brands fa-github"></i></button>`
-        document.getElementById('modaltags1').innerHTML = `
+      document.getElementById('modalbottombuttons').innerHTML = `
+        <button action="${projects[3].See_Live}" type="submit" class="seelive">See Live <img class="seelive_icon" src="./images/seelive.svg" alt="seelive_icon"></button>
+        <button action="${projects[3].Source}" type="submit" class="seesource">See Source <img class="seeSource" src="./images/seeSource.svg" alt="seesource_icon"></button>`
+      document.getElementById('modaltags1').innerHTML = `
         <ul class="flex-wrap">
-        <li><p>${projects[3].technologies[0]}</p></li>
-        <li><p>${projects[3].technologies[1]}</p></li>
-        <li><p>${projects[3].technologies[2]}</p></li>
-        <li><p>${projects[3].technologies[3]}</p></li>
+        <li><a>${projects[3].technologies[0]}</a></li>
+        <li><a>${projects[3].technologies[1]}</a></li>
+        <li><a>${projects[3].technologies[2]}</a></li>
+        <li><a>${projects[3].technologies[3]}</a></li>
         </ul>`
-        document.getElementById('modal-supporting-text').innerHTML = projects[3].description;
+      document.getElementById('modal-supporting-text').innerHTML = projects[3].description;
     }
   });
 });
