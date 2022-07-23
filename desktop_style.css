@@ -541,6 +541,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0 0 1rem;
+
     /* background-color: #091e42; */
     height: 8vh;
   }
@@ -573,12 +574,14 @@
   div .featuredimage {
     max-width: 100%;
     display: flex;
+
     /* justify-content: center; */
     align-items: center;
     object-fit: contain;
     padding: 0 1rem 0 1rem;
     height: 34.53vh;
     overflow: hidden;
+
     /* background-color: #091e42; */
   }
 
@@ -603,6 +606,7 @@
     line-height: 30px;
     color: #344563;
     overflow: hidden;
+
     /* padding-left: 18px; */
   }
 
