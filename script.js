@@ -1,20 +1,18 @@
 // Portfolio: mobile menu
-  const hamburger = document.querySelector('.hamburger');
-  const menuBar = document.querySelector('.menu_bar');
+const hamburger = document.querySelector('.hamburger');
+const menuBar = document.querySelector('.menu_bar');
 
-  hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    menuBar.classList.toggle('active');
-  });
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  menuBar.classList.toggle('active');
+});
 
-  document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click', () => {
-    hamburger.classList.remove('active');
-    menuBar.classList.remove('active');
-  }));
+document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click', () => {
+  hamburger.classList.remove('active');
+  menuBar.classList.remove('active');
+}));
 
-
-
-  //Portfolio: details popup window
+// Portfolio: details popup window
 
 const projects = [
   {
@@ -357,42 +355,35 @@ openButton.forEach((button) => {
   });
 });
 
-
-
 // Form validation feature
+const form = document.getElementById('form');
 function validation() {
-  const form = document.getElementById('form');
   const email = document.getElementById('user-email').value;
-  const text = document.getElementById("text");
+  const text = document.getElementById('text');
   const pattern = /[A-Z]/g;
 
   if (email.match(pattern)) {
-    form.classList.add("valid");
-    form.classList.remove("invalid");
-    text.innerHTML = "Email address should be in lowercase"
-    text.style.color = "#EBEBFF";
-    
+    form.classList.add('valid');
+    form.classList.remove('invalid');
+    text.innerHTML = 'Email address should be in lowercase';
+    text.style.color = '#EBEBFF';
   } else {
-    form.classList.remove("valid");
-    form.classList.add("invalid");
-    text.innerHTML = ""
+    form.classList.remove('valid');
+    form.classList.add('invalid');
+    text.innerHTML = '';
   }
-
-  if (email == "") {
-    form.classList.add("valid");
-    form.classList.remove("invalid");
-    text.innerHTML = ""
-  } 
-
-  document.getElementById('user-email').addEventListener('keydown', validation);
-
+  if (email === '') {
+    form.classList.add('valid');
+    form.classList.remove('invalid');
+    text.innerHTML = '';
+  }
+}
+document.getElementById('user-email').addEventListener('keydown', validation);
 form.addEventListener('submit', (event) => {
   // stop form submissio//
   event.preventDefault();
   validation();
-  if (form.classList.contains('valid')) {
+  if (form.classList.contains('invalid')) {
     form.submit();
   }
-  });
-}
-
+});

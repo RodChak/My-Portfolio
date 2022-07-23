@@ -461,7 +461,6 @@
     display: flex;
     flex-direction: column;
     margin-top: 500px;
-    height: 779px;
     background: #5263ff;
     background-position: 153px;
     background-image: url(./images/contactform.svg);
@@ -708,10 +707,10 @@
 
   /* validate contact form */
   #text {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  text-align: center;  
-  color: #EBEBFF;
-}
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #ebebff;
+  }
 }
