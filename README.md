@@ -8,6 +8,7 @@
 > For the fourth milestone in my portfolio website, I will use media queries to make sure that your website displays correctly on desktop screens.
 > For the fifth milestone I will make my website available online.
 > For the sixth milestone I will implemenent some features on the the mobile hamburger menu
+> For this seventh milestone I will implement a popup window that includes the project details in both desktop and mobile. In order to do that, I will need to store the information about my projects in a JavaScript object.
 
 
 
@@ -24,7 +25,8 @@
 
 ## Webpage user Interface Screenshot
 
-[Mobile Version Screenshot](/website_Screenshot.jpg)
+[Mobile Version Screenshot](./images/Mobile_Version_Screenshot.jpg)
+[Desktop Version Screenshot](./images/Desktop_Version_Screenshot.jpg)
 
 
 ## Authors
