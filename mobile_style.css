@@ -295,7 +295,7 @@
     padding: 8px 15px 8px 15px;
   }
 
-  .seebutton button {
+  .card button {
     font-weight: 500;
     font-size: 17px;
     line-height: 24px;
@@ -521,4 +521,192 @@
   label {
     display: none;
   }
+
+  
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background-color: #FFFFFF;
+    border: 1px solid #DFE1E6;
+    box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+    border-radius: 16px;
+    width: 94.46vw;
+    z-index: 10;
+    height: auto;
+    transition: 200ms ease-in-out;
+    margin-bottom: 50px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  } 
+
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  div.projectheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 1rem;
+    height: 36;
+  }
+
+  .modaltitle {
+    font-weight: 700;
+    font-size: 32px;
+    /* line-height: 44px; */
+    color: #172B4D;
+  }
+
+  .projectheader .closebutton {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    color: #67798E;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-right: 0.972vw;
+  }
+
+  #modalframe {
+    padding: 0 1rem 0 1rem;
+  }
+
+
+  div .featuredimage {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    object-fit:contain;
+    padding: 0 1rem 0 1rem;
+  }
+
+  #project-image-desktop{
+  width: 100vw;
+  height: 220px;
+  }
+  
+
+  .projectbody {
+    display: flex;
+    column-gap: 1rem;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 1rem 0 1rem;
+  }
+
+
+  #modal-supporting-text {
+    height: 220px;
+    overflow: hidden; 
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  #backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+  }
+
+  #backdrop.active {
+    background: #C1C7D0;
+    mix-blend-mode: multiply;
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  #modalbottombuttons {
+    display: flex;
+    column-gap: 1rem;
+    justify-content: center;
+  }
+
+  button.seelive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36.26vw;
+    height: 48px;
+    border: 1px solid #6070FF;
+    border-radius: 8px;
+    color: #396DF2;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  img.seelive_icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 14px;
+    margin-bottom: 0;
+  }
+
+  button.seesource {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36.26vw;
+    height: 48px;
+    border: 1px solid #6070FF;
+    border-radius: 8px;
+    color: #396DF2;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  img.seeSource {
+    width: 24px;
+    height: 24px;
+    margin-left: 14px;
+    margin-bottom: 0;
+  }
+
+  .project p{
+    padding-bottom: 15px;
+  }
+
+  .flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.13vw;
+    margin-bottom: 12px;
+    height: 40px;
+    overflow: hidden;
+    padding: 6px;
+    padding-left: 0;
+    width: 70.13vw;
+  }
+
+  .flex-wrap li {
+    list-style: none;
+    padding-top: 0;
+    padding-bottom: 10px;
+  }
+
+  .flex-wrap a {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #3d51ff;
+    border-radius: 8px;
+    background: #ebebff;
+    border: none;
+    padding: 8px 15px 8px 15px;
+    
+  }
+
 }
