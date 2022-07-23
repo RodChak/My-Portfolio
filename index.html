@@ -112,14 +112,16 @@
             <h2>Contact me</h2>
             <p>If you have an application you are interested in developing, a feature that you need built or a project
                 that needs coding. I’d love to help with it </p>
-            <form action="https://formspree.io/f/moqroddb" method="POST">
+            <form id="form" action="https://formspree.io/f/moqroddb" method="POST">
                 <label for="user-name">Name:</label>
                 <input name="text" id="user-name" placeholder="Yeremias" maxlength="30" required>
                 <label for="user-email">Email:</label>
-                <input type="email" id="user-email" placeholder="natajayanj14@gmail.com" required>
+                <input type="email" id="user-email" placeholder="natajayanj14@gmail.com"  required onkeypress = "validation()">
+                <span id="text"></span>
                 <label for="field3">Write your message:</label>
                 <textarea id="field3" placeholder="Write your message here" maxlength="500" required></textarea>
-                <button type="submit">Get In Touch</button>
+                <button id="submit-button" type="submit">Get In Touch</button>
+                
             </form>
             <div class="home_indicator">
                 <img src="./images/homeindicator.svg" alt="home_indicator">

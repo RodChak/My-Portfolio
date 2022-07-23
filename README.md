@@ -8,7 +8,8 @@
 > For the fourth milestone in my portfolio website, I will use media queries to make sure that your website displays correctly on desktop screens.
 > For the fifth milestone I will make my website available online.
 > For the sixth milestone I will implemenent some features on the the mobile hamburger menu
-> For this seventh milestone I will implement a popup window that includes the project details in both desktop and mobile. In order to do that, I will need to store the information about my projects in a JavaScript object.
+> For the seventh milestone I will implement a popup window that includes the project details in both desktop and mobile. In order to do that, I will need to store the information about my projects in a JavaScript object.
+> For the eighth milestone I will implement a client-side validation of the data in the contact form before submission.
 
 
 

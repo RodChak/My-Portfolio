@@ -685,4 +685,14 @@
     margin-bottom: 12px;
     flex-wrap: wrap;
   }
+
+  /* validate contact form */
+  #text {
+    display: block;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #ebebff;
+  }
 }

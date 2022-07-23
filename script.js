@@ -1,17 +1,18 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const hamburger = document.querySelector('.hamburger');
-  const menuBar = document.querySelector('.menu_bar');
+// Portfolio: mobile menu
+const hamburger = document.querySelector('.hamburger');
+const menuBar = document.querySelector('.menu_bar');
 
-  hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    menuBar.classList.toggle('active');
-  });
-
-  document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click', () => {
-    hamburger.classList.remove('active');
-    menuBar.classList.remove('active');
-  }));
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  menuBar.classList.toggle('active');
 });
+
+document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click', () => {
+  hamburger.classList.remove('active');
+  menuBar.classList.remove('active');
+}));
+
+// Portfolio: details popup window
 
 const projects = [
   {
@@ -352,4 +353,37 @@ openButton.forEach((button) => {
       document.getElementById('modal-supporting-text').innerHTML = projects[3].description;
     }
   });
+});
+
+// Form validation feature
+const form = document.getElementById('form');
+function validation() {
+  const email = document.getElementById('user-email').value;
+  const text = document.getElementById('text');
+  const pattern = /[A-Z]/g;
+
+  if (email.match(pattern)) {
+    form.classList.add('valid');
+    form.classList.remove('invalid');
+    text.innerHTML = 'Email address should be in lowercase';
+    text.style.color = '#EBEBFF';
+  } else {
+    form.classList.remove('valid');
+    form.classList.add('invalid');
+    text.innerHTML = '';
+  }
+  if (email === '') {
+    form.classList.add('valid');
+    form.classList.remove('invalid');
+    text.innerHTML = '';
+  }
+}
+document.getElementById('user-email').addEventListener('keydown', validation);
+form.addEventListener('submit', (event) => {
+  // stop form submissio//
+  event.preventDefault();
+  validation();
+  if (form.classList.contains('invalid')) {
+    form.submit();
+  }
 });
