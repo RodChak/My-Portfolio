@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+// Portfolio: mobile menu
   const hamburger = document.querySelector('.hamburger');
   const menuBar = document.querySelector('.menu_bar');
 
@@ -11,7 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
     hamburger.classList.remove('active');
     menuBar.classList.remove('active');
   }));
-});
+
+
+
+  //Portfolio: details popup window
 
 const projects = [
   {
@@ -353,3 +356,42 @@ openButton.forEach((button) => {
     }
   });
 });
+
+
+
+// Form validation feature
+function validation() {
+  const form = document.getElementById('form');
+  const email = document.getElementById('user-email').value;
+  const text = document.getElementById("text");
+  const pattern = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/gm;;
+
+  if (email.match(pattern)) {
+    form.classList.add("valid");
+    form.classList.remove("invalid");
+    text.innerHTML = ""
+  } else {
+    form.classList.remove("valid");
+    form.classList.add("invalid");
+    text.innerHTML = "Email address should be in lowercase"
+    text.style.color = "#EBEBFF";
+  }
+
+  if (email == "") {
+    form.classList.add("valid");
+    form.classList.remove("invalid");
+    text.innerHTML = ""
+  } 
+
+  document.getElementById('user-email').addEventListener('keydown', validation);
+
+form.addEventListener('submit', (event) => {
+  // stop form submissio//
+  event.preventDefault();
+  validation();
+  if (form.classList.contains('valid')) {
+    form.submit();
+  }
+  });
+}
+
