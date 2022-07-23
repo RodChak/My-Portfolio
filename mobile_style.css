@@ -542,7 +542,7 @@
 
   .modal {
     position: fixed;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     background-color: #fff;
@@ -551,7 +551,7 @@
     border-radius: 16px;
     width: 94.46vw;
     z-index: 10;
-    height: auto;
+    height: 90vh;
     transition: 200ms ease-in-out;
     margin-bottom: 50px;
     padding-top: 18px;
@@ -598,11 +598,12 @@
     justify-content: center;
     object-fit: contain;
     padding: 0 1rem 0 1rem;
+    height: 30vh;
   }
 
   #project-image-desktop {
     width: 100vw;
-    height: 220px;
+    height: 28vh;
   }
 
   .projectbody {
@@ -620,6 +621,7 @@
     font-size: 15px;
     line-height: 24px;
     color: #344563;
+    height: 22vh;
   }
 
   #backdrop {

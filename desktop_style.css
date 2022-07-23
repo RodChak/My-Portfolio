@@ -516,7 +516,7 @@
 
   .modal {
     position: fixed;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     background-color: #fff;
@@ -525,7 +525,7 @@
     border-radius: 16px;
     width: 80.27vw;
     z-index: 10;
-    height: auto;
+    height: 85vh;
     transition: 200ms ease-in-out;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -540,7 +540,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 0 0 1rem;
+    padding: 1rem 0 0 1rem;
+    /* background-color: #091e42; */
+    height: 8vh;
   }
 
   .modaltitle {
@@ -560,28 +562,37 @@
     font-weight: bold;
     margin-right: 0.972vw;
     transform: scale(1.5);
+    height: 8vh;
   }
 
   #modalframe {
     padding: 0 1rem 0 1rem;
+    margin-top: 1rem;
   }
 
   div .featuredimage {
     max-width: 100%;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    align-items: center;
     object-fit: contain;
     padding: 0 1rem 0 1rem;
+    height: 34.53vh;
+    overflow: hidden;
+    /* background-color: #091e42; */
   }
 
   #project-image-desktop {
     width: 100vw;
+    height: 33.53vh;
   }
 
   .projectbody {
     display: flex;
     column-gap: 1rem;
     justify-content: center;
+    height: 28.35vh;
+    overflow: hidden;
   }
 
   #modal-supporting-text {
@@ -591,6 +602,8 @@
     font-size: 16px;
     line-height: 30px;
     color: #344563;
+    overflow: hidden;
+    /* padding-left: 18px; */
   }
 
   .right-block {
