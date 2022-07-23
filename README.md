@@ -26,7 +26,7 @@
 ## Webpage user Interface Screenshot
 
 - [Mobile Version Screenshot](./images/Mobile_Version_Screenshot.jpg)
-- [Desktop Version Screenshot](./images/Desktop_Version_Screenshot.jpg)
+- [Desktop Version Screenshot](./images/Desktop_Version_Screenshot.png)
 
 
 ## Authors
