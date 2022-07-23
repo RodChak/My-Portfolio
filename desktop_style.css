@@ -33,7 +33,7 @@
   }
 
   .intro_page {
-    background: #fff;
+    background: #e5e5e5;
   }
 
   .navbar {
@@ -42,6 +42,7 @@
     padding: 26px 10.763vw 26px 10.763vw;
     align-items: center;
     justify-content: space-between;
+    background-color: #fff;
   }
 
   header a {
@@ -61,6 +62,18 @@
     list-style: none;
   }
 
+  .flex-wrap a {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #3d51ff;
+    border-radius: 8px;
+    background: #ebebff;
+    border: none;
+    padding: 8px 15px 8px 15px;
+  }
+
   .menu_bar li a {
     list-style: none;
     font-weight: 500;
@@ -76,11 +89,12 @@
   .background_content {
     display: flex;
     justify-content: center;
-    margin-top: 46px;
     background-image: url(./images/Header.svg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 721.46px;
+    background-color: #fff;
+    border-bottom-left-radius: 90px;
   }
 
   .content {
@@ -126,10 +140,11 @@
 
   #Works_Section {
     width: 100vw;
-    background: #fff;
+    background: #e5e5e5;
     display: grid;
     grid-template-columns: 80%;
     grid-template-rows: 24% 24% 24% 24%;
+    margin-top: 130px;
   }
 
   .card {
@@ -209,7 +224,7 @@
     font-size: 15px;
     line-height: 24px;
     color: #344563;
-    margin-bottom: 12px;
+    margin-bottom: 30px;
   }
 
   .categories li {
@@ -220,6 +235,17 @@
     display: flex;
     column-gap: 1.388vw;
     margin-bottom: 12px;
+  }
+
+  .flex-wrap li {
+    list-style: none;
+    margin-top: 15px;
+    padding-top: 0;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #5263ff;
   }
 
   .tags ul li {
@@ -233,7 +259,15 @@
     color: #5263ff;
   }
 
-  .tags button {
+  .content_2 h2 a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5263ff;
+  }
+
+  .tags ul li a {
     font-weight: 500;
     font-size: 12px;
     line-height: 16px;
@@ -245,7 +279,7 @@
     padding: 8px 15px 8px 15px;
   }
 
-  .see_project_button button {
+  .card button {
     font-weight: 500;
     font-size: 17px;
     line-height: 24px;
@@ -254,6 +288,7 @@
     padding: 12px;
     border: 1px solid #5263ff;
     border-radius: 8px;
+    margin-top: 24px;
   }
 
   .work_cards {
@@ -267,6 +302,8 @@
     display: flex;
     flex-direction: row;
     background-color: #fff;
+    padding-top: 140px;
+    border-top-right-radius: 90px;
   }
 
   .content_2 h2 {
@@ -283,14 +320,6 @@
     font-size: 16px;
     line-height: 24px;
     color: #344563;
-  }
-
-  .content_2 h2 a {
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #5263ff;
   }
 
   .split {
@@ -389,7 +418,7 @@
     background: #5263ff;
     background-size: cover;
     background-image: url(./images/contact_form_background_shapes_desktop.svg);
-    border-top-left-radius: 60px;
+    border-top-left-radius: 90px;
     background-repeat: no-repeat;
   }
 
@@ -483,5 +512,177 @@
 
   label {
     display: none;
+  }
+
+  .modal {
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background-color: #fff;
+    border: 1px solid #ebecf0;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+    border-radius: 16px;
+    width: 80.27vw;
+    z-index: 10;
+    height: 90vh;
+    transition: 200ms ease-in-out;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+  }
+
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .projectheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 0 1rem;
+
+    /* background-color: #091e42; */
+    height: 8vh;
+  }
+
+  .modaltitle {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #091e42;
+  }
+
+  .projectheader .closebutton {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    color: #67798e;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-right: 0.972vw;
+    transform: scale(1.5);
+    height: 8vh;
+  }
+
+  #modalframe {
+    padding: 0 1rem 0 1rem;
+    margin-top: 1rem;
+  }
+
+  div .featuredimage {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    object-fit: contain;
+    padding: 0 1rem 0 1rem;
+    height: 38.53vh;
+    overflow: hidden;
+    margin-bottom: 2rem;
+  }
+
+  #project-image-desktop {
+    width: 100vw;
+    object-fit: fill;
+  }
+
+  .projectbody {
+    display: flex;
+    column-gap: 1rem;
+    justify-content: center;
+    height: 28.35vh;
+    overflow: hidden;
+  }
+
+  #modal-supporting-text {
+    width: 54.02vw;
+    height: auto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
+    overflow: hidden;
+
+    /* padding-left: 18px; */
+  }
+
+  .right-block {
+    width: 21.25vw;
+    height: auto;
+  }
+
+  #backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+  }
+
+  #backdrop.active {
+    background: #c1c7d0;
+    mix-blend-mode: multiply;
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  #modalbottombuttons {
+    display: flex;
+    column-gap: 1.11vw;
+  }
+
+  button.seelive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 142px;
+    height: 40px;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    color: #396df2;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  img.seelive_icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 14px;
+  }
+
+  button.seesource {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 142px;
+    height: 40px;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    color: #396df2;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  img.seeSource {
+    width: 24px;
+    height: 24px;
+    margin-left: 14px;
+  }
+
+  .project p {
+    padding-bottom: 15px;
+  }
+
+  .flex-wrap {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
   }
 }
