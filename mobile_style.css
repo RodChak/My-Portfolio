@@ -704,4 +704,13 @@
     padding-left: 0;
     width: 70.13vw;
   }
+
+  /* validate contact form */
+  #text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;  
+  color: #EBEBFF;
+}
 }
